@@ -1,18 +1,18 @@
 <template>
-  <div id="MainPanel">
-    <h1>Main Panel</h1>
+  <div id="Profile">
+    <h1>Profile</h1>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'MainPanel',
+  name: 'Profile',
   data: function () {
     return {}
   }
 }
 </script>
 
-<style>
-  #MainPanel {}
+<style scoped>
+  #Profile {}
 </style>

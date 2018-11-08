@@ -7,9 +7,9 @@
 </template>
 
 <script>
-import Header from '@/components/Header/Header'
-import SidePanel from '@/components/Layout/SidePanel'
-import MainPanel from '@/components/Layout/MainPanel'
+import Header from '@/Views/Dashboard/Header/Header'
+import SidePanel from '@/Views/Dashboard/SidePanel/SidePanel'
+import MainPanel from '@/Views/Dashboard/MainPanel/MainPanel'
 export default {
   name: 'Dashboard',
   data: function () {
@@ -24,5 +24,7 @@ export default {
 </script>
 
 <style scoped>
-    #Dashboard {}
+    #Dashboard {
+      height: 100%;
+    }
 </style>
