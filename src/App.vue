@@ -17,6 +17,9 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
 }
+h1, h2, h3, h4, h5, p {
+  margin-bottom: 0px;
+}
 .light-grey-bg {
   background-color: #ECECEC;
 }
@@ -29,10 +32,10 @@ export default {
 .blue-text {
   color: #5F70E3;
 }
-.dark-blue-bg {
-  background-color: #555C6D;
+.grey-bg {
+  background-color: #DFDFDF;
 }
-.dark-blue-text {
-  color: #555C6D;
+.grey-text {
+  color: #DFDFDF;
 }
 </style>

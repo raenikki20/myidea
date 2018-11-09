@@ -10,9 +10,9 @@
           </b-row>
         </b-col>
         <b-col cols="4" sm="12" md="12" lg="4" class="right light-grey-bg">
-          <b-row align-h="center" class="top-margin">
+          <b-row align-h="center" align-v="center" style="height: 100%;">
             <b-col cols="9">
-              <router-view></router-view>
+              <Subscribe></Subscribe>
             </b-col>
           </b-row>
         </b-col>
@@ -23,13 +23,15 @@
 
 <script>
 import Main from '@/Views/Home/LeftPanel/Main'
+import Subscribe from '@/Views/Home/RightPanel/Subscribe/Subscribe'
 export default {
   name: 'Home',
   data: function () {
     return {}
   },
   components: {
-    'Main': Main
+    'Main': Main,
+    'Subscribe': Subscribe
   }
 }
 </script>
@@ -45,6 +47,6 @@ export default {
       height: 100vh;
     }
     .top-margin {
-      margin-top: 300px;
+      margin-top: 20%;
     }
 </style>

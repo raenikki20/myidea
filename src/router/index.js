@@ -22,29 +22,27 @@ export default new Router({
     {
       path: '/',
       name: 'Home',
-      component: Home,
-      children: [
-        {
-          path: '/subscribe',
-          name: 'Subscribe',
-          component: Subscribe
-        },
-        {
-          path: '/login',
-          name: 'Login',
-          component: Login
-        },
-        {
-          path: '/signup',
-          name: 'SignUp',
-          component: SignUp
-        },
-        {
-          path: '/resetpassword',
-          name: 'ResetPassword',
-          component: ResetPassword
-        }
-      ]
+      component: Home
+    },
+    {
+      path: 'subscribe',
+      name: 'Subscribe',
+      component: Subscribe
+    },
+    {
+      path: 'login',
+      name: 'Login',
+      component: Login
+    },
+    {
+      path: 'signup',
+      name: 'SignUp',
+      component: SignUp
+    },
+    {
+      path: 'resetpassword',
+      name: 'ResetPassword',
+      component: ResetPassword
     },
     {
       path: '/dashboard',

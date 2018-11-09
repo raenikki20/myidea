@@ -30,9 +30,7 @@ export default {
 </script>
 
 <style scoped>
-  #Projects {
-    margin-top: 50px;
-  }
+  #Projects {}
   .img {
     padding: 20px;
   }
