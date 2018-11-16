@@ -14,6 +14,9 @@ import ResetPassword from '@/Views/Home/RightPanel/ResetPassword/ResetPassword'
 import Dashboard from '@/Views/Dashboard/Dashboard'
 import Profile from '@/Views/Dashboard/MainPanel/Profile/Profile'
 import Projects from '@/Views/Dashboard/MainPanel/Projects/Projects'
+import NewSetup from '@/Views/Dashboard/MainPanel/CreateProject/NewSetup'
+import NewContent from '@/Views/Dashboard/MainPanel/CreateProject/NewContent'
+import Review from '@/Views/Dashboard/MainPanel/CreateProject/Review'
 
 Vue.use(Router)
 
@@ -58,6 +61,21 @@ export default new Router({
           path: '/projects',
           name: 'Projects',
           component: Projects
+        },
+        {
+          path: '/newsetup',
+          name: 'NewSetup',
+          component: NewSetup
+        },
+        {
+          path: '/newcontent',
+          name: 'NewContent',
+          component: NewContent
+        },
+        {
+          path: '/review',
+          name: 'Review',
+          component: Review
         }
       ]
     }

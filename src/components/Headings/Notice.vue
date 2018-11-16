@@ -1,7 +1,10 @@
 <template>
   <div id="Notice">
-    <p class="dark-blue-text">
-      {{ Notice }}
+    <p v-if="Notice.link" class="dark-blue-text">
+      {{ Notice.text }}<router-link :to="Notice.link">{{ Notice.text2 }}</router-link>
+    </p>
+    <p v-else class="dark-blue-text">
+      {{ Notice.text }}
     </p>
   </div>
 </template>

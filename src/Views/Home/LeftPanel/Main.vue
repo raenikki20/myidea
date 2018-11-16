@@ -1,13 +1,13 @@
 <template>
   <div id="Main">
-    <Heading></Heading>
+    <Heading type="one" Heading="Logo"></Heading>
     <Slogan></Slogan>
   </div>
 </template>
 
 <script>
-import Heading from '@/components/Home/LeftPanel/Heading'
-import Slogan from '@/components/Home/LeftPanel/Slogan'
+import Heading from '@/components/Headings/Heading'
+import Slogan from '@/components/Headings/Slogan'
 export default {
   name: 'Main',
   data: function () {

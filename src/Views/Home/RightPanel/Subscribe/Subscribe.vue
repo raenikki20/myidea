@@ -1,31 +1,41 @@
 <template>
   <div id="Subscribe">
-    <Heading :Heading="Heading"></Heading>
-    <SubHeading :SubHeading="SubHeading"></SubHeading>
-    <Form></Form>
+    <Heading type="two" Heading="Want to know when we launch?"></Heading>
+    <SubHeading SubHeading="Leave your email and we will be in touch"></SubHeading>
+    <b-form @submit="Subscribe">
+      <CustomInput type="email"></CustomInput>
+      <CustomButton label="Subscribe"></CustomButton>
+    </b-form>
     <Notice :Notice="Notice"></Notice>
   </div>
 </template>
 
 <script>
-import Heading from '@/components/Home/RightPanel/Heading'
-import SubHeading from '@/components/Home/RightPanel/SubHeading'
-import Form from '@/components/Subscribe/Form'
-import Notice from '@/components/Home/RightPanel/Notice'
+import Heading from '@/components/Headings/Heading'
+import SubHeading from '@/components/Headings/SubHeading'
+import CustomInput from '@/components/UserControls/Input'
+import CustomButton from '@/components/UserControls/Button'
+import Notice from '@/components/Headings/Notice'
 export default {
   name: 'Subscribe',
   data: function () {
     return {
-      Heading: 'Want to know when we launch?',
-      SubHeading: 'Leave your email and we will be in touch',
-      Notice: 'Dont worry, your email is safe with us'
+      Notice: {
+        text: 'Dont worry, your email is safe with us'
+      }
     }
   },
   components: {
     'Heading': Heading,
     'SubHeading': SubHeading,
-    'Form': Form,
+    'CustomInput': CustomInput,
+    'CustomButton': CustomButton,
     'Notice': Notice
+  },
+  methods: {
+    Subscribe () {
+      console.log('Subscribe')
+    }
   }
 }
 </script>

@@ -7,11 +7,13 @@
             <h1>Logo</h1>
           </div>
           <div class="right">
-            <a href="#" class="navRight">Messages</a>
+            <div class="vl"></div>
+            <a href="#" class="navRight">Account</a>
             <div class="vl"></div>
             <a href="#" class="navRight">Notifications</a>
             <div class="vl"></div>
-            <a href="#" class="navRight">Account</a>
+            <a href="#" class="navRight">Messages</a>
+            <div class="vl"></div>
           </div>
         </b-col>
       </b-row>

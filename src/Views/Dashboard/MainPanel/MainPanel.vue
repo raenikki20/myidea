@@ -3,7 +3,7 @@
     <b-container fluid>
       <b-row align-h="center" align-v="center">
         <b-col cols="12" class="">
-          <h1>Main Panel</h1>
+          <router-view></router-view>
         </b-col>
       </b-row>
     </b-container>

@@ -24,6 +24,9 @@
 <script>
 import Main from '@/Views/Home/LeftPanel/Main'
 import Subscribe from '@/Views/Home/RightPanel/Subscribe/Subscribe'
+import SignUp from '@/Views/Home/RightPanel/SignUp/SignUp'
+import Login from '@/Views/Home/RightPanel/Login/Login'
+import ResetPassword from '@/Views/Home/RightPanel/ResetPassword/ResetPassword'
 export default {
   name: 'Home',
   data: function () {
@@ -31,7 +34,10 @@ export default {
   },
   components: {
     'Main': Main,
-    'Subscribe': Subscribe
+    'Subscribe': Subscribe,
+    'SignUp': SignUp,
+    'Login': Login,
+    'ResetPassword': ResetPassword
   }
 }
 </script>
